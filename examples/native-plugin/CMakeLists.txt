@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.21)
+project(XMCLEchoPlugin LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_AUTOMOC ON)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Core)
+add_library(xmcl_echo MODULE EchoPlugin.cpp)
+target_include_directories(xmcl_echo PRIVATE ../../src/services)
+target_link_libraries(xmcl_echo PRIVATE Qt6::Core)

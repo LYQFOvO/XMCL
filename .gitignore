@@ -1,0 +1,19 @@
+/build*/
+.DS_Store
+*.user
+/.qt/
+/bridge/.cache/
+/bridge/build/
+
+# Local tooling and credentials
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+!.env.sample
+/logs/
+/backups/
+/secrets/
+/accounts.json
+/settings.json
